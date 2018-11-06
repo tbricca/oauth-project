@@ -8,6 +8,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Set Up Routes
+app.use('/auth',authRoutes);
 
 //create home route 
 app.get('/', (req, res) => {
